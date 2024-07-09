@@ -1,0 +1,134 @@
+{
+	"Albury/Wodonga": {
+		"postcode": 3690,
+		"lat": -36.12510812266447,
+		"long": 146.8883993196557,
+		"forecast": "IDV10703"
+	},
+	"Bairnsdale": {
+		"postcode": 3875,
+		"lat":-37.83097612350151,
+		"long": 147.61109109888267,
+		"forecast": "IDV10704"
+	},
+	"Ballarat": {
+		"postcode": 3350,
+		"lat": -37.56115190290717,
+		"long": 143.85343639978504,
+		"forecast": "IDV10705"
+	},
+	"Bendigo": {
+		"postcode": 3550,
+		"lat": -36.75930793385817,
+		"long": 144.27794047903535,
+		"forecast": "IDV10706"
+	},
+	"Colac": {
+		"postcode": 3250,
+		"lat": -38.339820615718565,
+		"long": 143.58439228647626,
+		"forecast": "IDV10707"
+	},
+	"Echuca": {
+		"postcode": 3564,
+		"lat": -36.14047163368063,
+		"long": 144.7511554322917,
+		"forecast": "IDV10708"
+	},
+	"Hamilton": {
+		"postcode": 3300,
+		"lat": -37.74213392134063,
+		"long": 142.02168540101857,
+		"forecast": "IDV10710"
+	},
+	"Horsham": {
+		"postcode": 3400,
+		"lat": -36.71664246519581, 
+		"long": 142.19702978979063,
+		"forecast": "IDV10711"
+	},
+	"Latrobe Valley": {
+		"postcode": 3840,
+		"lat": -38.24054592623773,
+		"long": 146.40797042888238,
+		"forecast": "IDV10712"
+	},
+	"Mildura": {
+		"postcode": 3500,
+		"lat": -34.20675712291196,
+		"long": 142.13637410872076,
+		"forecast": "IDV10714"
+	},
+	"Mount Buller": {
+		"postcode": 3723,
+		"lat": -37.145854793713994,
+		"long": 146.44943875128033,
+		"forecast": "IDV10715"
+	},
+	"Mount Dandenong": {
+		"postcode": 3767,
+		"lat": -37.830912019558426,
+		"long": 145.36045133380748,
+		"forecast": "IDV10716"
+	},
+	"Mount Hotham": {
+		"postcode": 3741,
+		"lat": -36.97533955455182,
+		"long": 147.13278005254352,
+		"forecast": "IDV10717"
+	},
+	"Orbost": {
+		"postcode": 3888,
+		"lat": -37.69758163228162,
+		"long": 148.45719519895758,
+		"forecast": "IDV10718"
+	},
+	"Sale": {
+		"postcode": 3850,
+		"lat": -38.10516355376602,
+		"long": 147.06812892841762,
+		"forecast": "IDV10719"
+	},
+	"Seymour": {
+		"postcode": 3660,
+		"lat": -37.02516681120592,
+		"long": 145.13503493299538,
+		"forecast": "IDV10721"
+	},
+	"Shepparton": {
+		"postcode": 3630,
+		"lat": -36.38205627733872,
+		"long": 145.40730314597974,
+		"forecast": "IDV10722"
+	},
+	"Swan Hill": {
+		"postcode": 3585,
+		"lat": -35.34022631047418,
+		"long": 143.54413581300744,
+		"forecast": "IDV10723"
+	},
+	"Wangaratta": {
+		"postcode": 3677,
+		"lat": -36.365239177718095,
+		"long": 146.31479089529967,
+		"forecast": "IDV10725"
+	},
+	"Warrnambool": {
+		"postcode": 3280,
+		"lat": -38.37224190835167,
+		"long": 142.47789684990607,
+		"forecast": "IDV10726"
+	},
+	"Wonthaggi": {
+		"postcode": 3995,
+		"lat": -38.60608416944563,
+		"long": 145.5911266970584,
+		"forecast": "IDV10728"
+	},
+	"Falls Creek": {
+		"postcode": 3699,
+		"lat": -36.864675532985835,
+		"long": 147.27919079220422,
+		"forecast": "IDV10730"
+	}
+}
