@@ -1,5 +1,7 @@
 import exchangelib, json, maidenhead, bom, traceback, requests
+import vicemerg
 import time
+from datetime import datetime
 class EmailServer():
 
     def __init__(self, configFileName):
@@ -48,7 +50,15 @@ class EmailServer():
                     self.sendEmail(email_from, "VK3MAG Winlink ERROR", f"Invalid usage, usage is:\n\"weather grid <grid>\" OR \"weather coord <lat> <long>\"")
                 except TypeError:
                     self.sendEmail(email_from, "VK3MAG Winlink ERROR", f"Invalid coordinates, usage is:\n\"weather grid <grid>\" OR \"weather coord <lat> <long>\"")
-                
+            
+            elif args[0] == "vicemerg":
+                currentTime = str(datetime.now())
+                if len(args) > 1:
+                    if args[1] == "raw":
+                        self.sendEmail(email_from, f"VicEmerg Data Set at {currentTime}", vicemerg.getData(False))
+                else:
+                    self.sendEmail(email_from, f"VicEmerg Data Set at {currentTime}", vicemerg.getData(True))
+
             elif args[0] == "message":
                 if email_from.lower() not in self.config["allowed_to_message"]:
                     print(f"Disallowed user {email_from} tried to send a message!")
@@ -79,6 +89,8 @@ class EmailServer():
                     self.sendEmail(email_from, "VK3MAG Winlink Message Sent", f"Discord Message successfully sent. Message content is:\n\n" + body)
             else:
                 body = "Usage:\n"
+                body += "\t'VicEmerg' - Gets a simplified version of the VicEmerg current json data set, Base64 Encoded Gzipped\n"
+                body += "\t'VicEmerg Raw' - Gets a simplified version of the VicEmerg current json data set, in raw text\n"
                 body += "\t'Weather Coord <lat> <long>' - Gets the closest BOM Forecast to specified coords (eg 'Weather Coord -37.82, 144.95') , only works in VK3 currently\n"
                 body += "\t'Weather Grid <grid>' - Gets the closest BOM Forecast for the specified grid square (eg 'Weather Grid QF23'), only works in VK3 currently\n"
 
