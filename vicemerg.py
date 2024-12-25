@@ -34,7 +34,7 @@ def getData(compressed=False):
         dataBytes = json.dumps(newData).encode("utf-8")
         compressedBytes = gzip.compress(dataBytes)
         b64 = base64.b64encode(compressedBytes)
-        return b64
+        return b64.decode()
     else:
         return json.dumps(newData)
 
